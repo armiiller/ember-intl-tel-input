@@ -6,8 +6,9 @@ import layout from '../templates/components/intl-tel-input';
 export default Ember.TextField.extend({
   layout: layout,
   tagName: 'input',
-  attributeBindings: ['type'],
+  attributeBindings: ['type', 'disabled'],
   type: 'tel',
+  disabled: false,
 
   /**
    * When `autoFormat` is enabled, this option will support formatting
